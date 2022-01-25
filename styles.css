@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+/*PAGE TRANSITION ANIMATIONS*/
+
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+    transform: translateX(0);
+    transform-origin: top;
+}
+
+html.is-animating .transition-fade {
+    opacity: 1;
+    transform: translateY(100%);
+}
+
+html.is-leaving .transition-fade {
+    opacity: 0;
+}
+
+/* HTML BODY BACKGROUND */
+
+html, body {
+    background: #2C3E50;
+    background: -webkit-linear-gradient(to left, #2C3E50,
+    #FD746C);
+    background: linear-gradient(to left, #2C3E50, #FD746C);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li:nth-child(1){
+    padding:0 20px 0 0;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color:white;
+}
+
+.nav-links button {
+    margin-left: 10px;
+    padding: 10px 25px;
+    background-color: rgba(225, 225, 225, 0.2);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links button:hover {
+    background-color: rgba(225, 225, 225, 1);    
+}
+
+.pic {
+    margin-bottom: 20px;
+    max-width: 11%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 80%;
+}
+
+.main {
+    margin-bottom:0 20px 0 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(225, 225, 225);
+}
+
+.main > h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.main > h3 {
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.main > h4 {
+    margin-bottom: 70px;
+}
+
+.main > .main-text {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 18px;
+}
+
+.loading-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 29px;
+    color: rgb(225, 225, 225);
+    margin-bottom: 25px;
+}
+
+.lower {
+    margin-bottom:0 20px 0 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(225, 225, 225);    
+}
+
+.lower > .lower-text {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+    font-size: 18px;    
+}
+
+#project-header {
+    margin-bottom:0 50px 0 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(225, 225, 225);    
+}
+
+/* ABOUT.HTML */
+
+.main-abt {
+    margin-bottom:0 20px 0 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(225, 225, 225);   
+}
+
+.main-abt > h1 {
+    margin-top: 10%;
+}
+
+.main-abt > .main-abt-text {
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 18px;    
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(225, 225, 225);
+}
+
+/* CONTACT.HTML */
+
+.main-cta {
+    margin-bottom:0 20px 0 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(225, 225, 225);    
+}
+
+.main-cta > .main-cta-text {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 75px;
+    font-size: 18px;
+}
+
+.icons button {
+    background: #2C3E50;
+    background: -webkit-linear-gradient(to left, #2C3E50,
+    #FD746C);
+    background: linear-gradient(to left, #2C3E50, #FD746C);
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    transition: all 0.3s ease 0s;
+}
+
+.form-section {
+    margin-top: 75px;
+}
+
+form .btn-submit {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 25px;
+    background-color: rgba(225, 225, 225, 0.2);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 3%;
+}
+
+form .btn-submit:hover {
+    background-color: rgba(225, 225, 225, 1);    
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+form textarea {
+    resize: none;
+}
+
+
+/* PROJECTS */
+
+.grid-project-detail {
+    display: flex;
+    margin:0 20%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(225, 225, 225);  
+}
+
+.project-detail {
+    grid-column: span 8;
+    margin: 6rem;
+}
+
+
+
+
+
+
